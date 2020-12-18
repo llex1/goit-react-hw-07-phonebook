@@ -3,7 +3,7 @@ const KEY = "AleksaHrevtsova";
 const postman = (store) => (next) => (action) => {
   // console.log(action);
   if (action.type === "AVE") {
-    fetch(`http://llex.one/api/?key=${KEY}`)
+    fetch(`https://llex.one/api/?key=${KEY}`)
       .then((data) => data.json())
       .then((json) => {
         action = {
@@ -15,7 +15,7 @@ const postman = (store) => (next) => (action) => {
         next(action);
       });
   } else if (action.type === "ADD" && action.payload.contacts.length) {
-    fetch(`http://llex.one/api/?key=${KEY}`, {
+    fetch(`https://llex.one/api/?key=${KEY}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ const postman = (store) => (next) => (action) => {
     })
     .then(next(action));
   } else if (action.type === "DEL"){
-    fetch(`http://llex.one/api/?key=${KEY}`, {
+    fetch(`https://llex.one/api/?key=${KEY}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

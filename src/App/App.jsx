@@ -18,13 +18,9 @@ class App extends Component {
   delayToCloseAlert = null;
 
   componentDidMount() {
-    if(localStorage.getItem('contacts')){
-      const contacts = [...JSON.parse(localStorage.getItem('contacts'))];
-      this.props.action_AVE(contacts)
-    }
+      this.props.action_AVE()
   }
   componentDidUpdate() {
-    localStorage.setItem('contacts', JSON.stringify(this.props.state.contacts))
   }
 
   render() {
