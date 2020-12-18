@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  padding-top: 2em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.phonebook {
+  position: relative;
+  width: 500px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.phonebook::before {
+  content: "under construction";
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  font-size: 1.5rem;
+  color: #ccccff;
+}
+.header-appear {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.header-appear-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 500ms linear;
+}
+.filter-enter {
+  opacity: 0;
+  transform: scale(0);
+}
+.filter-enter-active {
+  transition: 300ms linear;
+  opacity: 1;
+  transform: scale(1);
+}
+.filter-exit {
+  transition: 300ms linear;
+  opacity: 1;
+  transform: scale(1);
+}
+.filter-exit-active {
+  opacity: 0;
+  transform: scale(0);
+}

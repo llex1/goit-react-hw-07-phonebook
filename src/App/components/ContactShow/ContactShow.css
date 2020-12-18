@@ -1,0 +1,43 @@
+.contact-show{
+  display: flex;
+  flex-direction: column;
+}
+.contact-show-list{
+
+}
+.contact-show-list-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  margin-bottom: 0.2em;
+  border: 1px solid gray;
+}
+.contact-show-list-item-enter{
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.contact-show-list-item-enter-active{
+  transition: 250ms linear;
+  transform: translateX(0);
+  opacity: 1;
+}
+.contact-show-list-item-exit{
+  transition: 250ms linear;
+  transform: translateX(0);
+  opacity: 1;
+}
+.contact-show-list-item-exit-active{
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+
+
+
+
+
+.contact-show-list-text{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}

@@ -1,0 +1,36 @@
+.alert {
+  position: absolute;
+  z-index: 1000;
+  top: 4rem;
+  left: 50%;
+  padding: 1em;
+  width: 30em;
+  background-color: #EBDEF0;
+  border: 1px solid #7D3C98;
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  transform: translateX(-50%) scale(0);
+  transition: 250ms linear;
+}
+.alert-enter{
+  transform: translateX(-50%) scale(1, 0) translateY(-100%);
+  opacity: 0.8;
+}
+.alert-enter-done{
+  transform: translateX(-50%) scale(1, 1) translateY(0);
+  opacity: 1;
+}
+.alert-exit{
+  transform: translateX(-50%) scale(1, 1) translateY(0);
+  opacity: 1;
+}
+.alert-exit-active{
+  transform: translateX(-50%) scale(1, 0) translateY(-100%);
+  opacity: 0.8;
+}
+.alert-text{
+  font-weight: 700;
+  color: #7D3C98;
+}

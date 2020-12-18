@@ -1,0 +1,8 @@
+#filter{
+  padding: 1em;
+}
+.filter{
+  display: flex;
+  flex-direction: column;
+  
+}

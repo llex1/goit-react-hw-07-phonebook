@@ -1,0 +1,16 @@
+.form{
+ display: flex;
+ flex-direction: column; 
+ margin-bottom: 1em;
+}
+.label{
+  opacity: 0.5;
+}
+.input{
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.btn{
+  padding: 1em;
+  cursor: pointer;
+}
